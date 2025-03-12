@@ -1,18 +1,1 @@
-<!DOCTYPE html>
-<html>
-<body>
-    <button onclick="openCamera()">افتح الكاميرا</button>
-    <video id="video" width="300" height="300" autoplay></video>
-    <script>
-        function openCamera() {
-            navigator.mediaDevices.getUserMedia({ video: { facingMode: "user" } })
-                .then(stream => {
-                    document.getElementById('video').srcObject = stream;
-                })
-                .catch(error => {
-                    alert("الطفل لم يوافق على تشغيل الكاميرا!");
-                });
-        }
-    </script>
-</body>
-</html>
+
